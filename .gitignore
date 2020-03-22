@@ -1,4 +1,7 @@
+addons/
 assets/
+exports/
+export_presets.cfg
 
 # godot
 _filedir
