@@ -1,0 +1,7 @@
+assets/
+
+# godot
+_filedir
+.import/
+export.cfg
+export_presets.cfg
