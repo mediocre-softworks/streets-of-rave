@@ -1,0 +1,20 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://Scenes/Player/Player.gd" type="Script" id=19]
+
+[sub_resource type="Animation" id=1]
+resource_name = "Idle"
+length = 1.1
+
+[sub_resource type="Animation" id=2]
+resource_name = "Run"
+length = 0.8
+
+[node name="Player" type="Node2D"]
+scale = Vector2( 2, 2 )
+script = ExtResource( 19 )
+
+[node name="Animations" type="AnimationPlayer" parent="."]
+autoplay = "Idle"
+anims/Idle = SubResource( 1 )
+anims/Run = SubResource( 2 )

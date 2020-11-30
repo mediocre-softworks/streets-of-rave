@@ -16,7 +16,7 @@ _global_script_class_icons={
 [application]
 
 config/name="Streets of Rave"
-run/main_scene="res://scenes/Root.tscn"
+run/main_scene="res://Scenes/Root/Root.tscn"
 boot_splash/fullsize=false
 boot_splash/use_filter=false
 config/icon="res://icon.png"

@@ -1,0 +1,28 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://Scenes/Background/Assets/Sky.png" type="Texture" id=1]
+[ext_resource path="res://Scenes/Root/Environment.tres" type="Environment" id=2]
+[ext_resource path="res://Scenes/Background/Assets/Barn.png" type="Texture" id=3]
+
+[node name="Background" type="ParallaxBackground"]
+follow_viewport_enable = true
+
+[node name="World" type="WorldEnvironment" parent="."]
+environment = ExtResource( 2 )
+
+[node name="Parallax" type="ParallaxBackground" parent="."]
+
+[node name="Sky" type="ParallaxLayer" parent="Parallax"]
+motion_scale = Vector2( 0.1, 1 )
+
+[node name="Sprite" type="Sprite" parent="Parallax/Sky"]
+scale = Vector2( 4.79732, 3.15905 )
+texture = ExtResource( 1 )
+centered = false
+
+[node name="Barn" type="ParallaxLayer" parent="Parallax"]
+
+[node name="Sprite" type="Sprite" parent="Parallax/Barn"]
+position = Vector2( 1191.39, 546.26 )
+scale = Vector2( 0.791582, 0.9584 )
+texture = ExtResource( 3 )
